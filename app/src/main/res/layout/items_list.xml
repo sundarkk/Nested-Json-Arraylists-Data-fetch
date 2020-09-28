@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="horizontal">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgproducts"
+        android:layout_width="100dp"
+        android:layout_gravity="center"
+        android:layout_height="100dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_Product_Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="tv_Product_Name"
+            android:textSize="30sp"
+            android:typeface="sans" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_Product_Description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="tv_Product_Description"
+            android:textSize="20sp"
+            android:typeface="serif" />
+
+       <!-- <androidx.appcompat.widget.AppCompatRatingBar
+            android:id="@+id/ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp" />-->
+
+        <LinearLayout
+            android:id="@+id/tvAddCate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Btn_Add"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/gradient"
+                android:drawablePadding="10dp"
+                android:text="+" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_Product_Quantity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="quality"
+                android:textSize="20sp"
+                android:typeface="sans" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/Btn_Remove"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/gradient"
+                android:text="-" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
